@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My personal portfolio website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3dd4dedf7d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{%static 'css/sarbee.css'%}"/>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'images/logo.JPG' %}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+
+              </a>
+          <a class="navbar-brand" href="/">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#videos">Tutorial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#certificates">Certificates</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#progress">Progress</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#social-link">Socail-Link</a>
+              </li>
+            <form class="d-flex" role="search" action="#videos" method="GET">
+              <input class="form-control me-2" type="search" name="q" placeholder="Search Tutorial" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+   <!--header begins-->
+    <header id="header" class="bg-dark py-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-8 px-4">
+         <h1 class="text-danger text-uppercase font-weight-bold font-italic">
+          <strong>Salaudeen Ridwan Adeniyi</strong>
+         </h1>
+         <p class="text-white lead w-75 py-2">Hello! I'm a passionate and versatile developer with expertise in Django, mathematics, data science,
+            and front-end development using Bootstrap, HTML, and CSS. I love turning ideas into reality through
+            code and solving complex problems with mathematical precision.
+        </p>
+         <a href="https://github.com/SARBEE-dev?tab=repositories" target="_blank" class="btn btn-outline-primary btn-lg m-2 text-capitalize ">Git Hub</a>
+         <a href="https://www.linkedin.com/in/salaudeen-ridwan-576119124/" target="_blank" class="btn btn-outline-success btn-lg m-2 text-capitalize ">Linked In</a>
+        </div>
+        <div class="col-4">
+            <img src="{% static 'images/sar.jpg' %}" class="img-fluid rounded-circle img-thumbnail"/>
+        </div>
+      </div>
+    </div>
+  </header>
+<!--end of header-->
+
+<!--skills section-->
+<section id="skills" class="bg-white py-5">
+  <div class="container-fluid">
+    <!--title-->
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="lead display-4 mb-0 text-uppercase text-dark"><strong>Skills</strong></h1>
+        <div class="title-underline bg-danger bg-blue"></div>
+        <p class="mt-2 text-capitalize text-muted">Some of my skills</p>
+      </div>
+    </div>
+<!--end of title-->
+
+<div class="row">
+  <!--single column-->
+  <div class="col-md-6 col-lg-3 text-center my-4">
+    <i class="fab fa-python fa-5x text-danger"></i>
+
+<h3 class="text-uppercase my-3">Python</h3>
+
+  </div>
+<!--end of single column-->
+  <!--single column-->
+  <div class="col-md-6 col-lg-3 text-center my-4">
+    <i class="fab fa-css3 fa-5x text-danger"></i>
+    <h3 class="text-uppercase my-3">CSS3</h3>
+
+      </div>
+    <!--end of single column-->
+      <!--single column-->
+  <div class="col-md-6 col-lg-3 text-center my-4">
+    <i class="fab fa-html5 fa-5x text-danger"></i>
+    <h3 class="text-uppercase my-3">HTML5</h3>
+
+      </div>
+    <!--end of single column-->
+      <!--single column-->
+  <div class="col-md-6 col-lg-3 text-center my-4">
+    <i class="fab fa-js fa-5x text-danger"></i>
+    <h3 class="text-uppercase my-3">JAVASCRIPT</h3>
+      </div>
+    <!--end of single column-->
+</div>
+  </div>
+
+
+  <div class="row">
+  <!--single column-->
+  <div class="col-md-6 col-lg-3 text-center my-4">
+    <i class="fa-brands fa-bootstrap fa-5x text-danger"></i>
+
+<h3 class="text-uppercase my-3">Bootstrap</h3>
+
+  </div>
+<!--end of single column-->
+  <!--single column-->
+  <div class="col-md-6 col-lg-3 text-center my-4">
+    <svg height="80" preserveAspectRatio="xMidYMid" viewBox="0 0 256 326" width="80" xmlns="http://www.w3.org/2000/svg"><g fill="#b30000"><path d="m114.78426 0h53.277999v244.191113c-27.290404 5.162172-47.381078 7.193079-69.117404 7.193079-65.0718413-.067924-98.944855-29.139102-98.944855-84.972068 0-53.795267 35.9300792-88.7078508 91.6079875-88.7078508 8.6396755 0 15.2222855.6792329 23.1762725 2.7169325zm1.867183 124.426648c-6.239766-2.0377-11.38243-2.716934-17.9650395-2.716934-26.9475597 0-42.5126892 16.437443-42.5126892 45.243722 0 28.045536 14.8794413 43.532053 42.1698442 43.532053 5.8969215 0 10.6967405-.332825 18.3078845-1.351675z"/><path d="m255.186899 84.2605714v122.2619686c0 42.105664-3.154168 62.353604-12.410963 79.809896-8.639675 16.783852-20.022104 27.366305-43.541221 39.055907l-49.438144-23.297697c23.519117-10.928862 34.901547-20.587558 42.169846-35.326917 7.611142-15.072184 10.011052-32.528476 10.011052-78.444637v-104.0585206z"/><path d="m196.608 0h53.277999v54.1348831h-53.277999z"/></g></svg>
+    <h3 class="text-uppercase my-3">DJANGO</h3>
+      </div>
+    <!--end of single column-->
+      <!--single column-->
+  <div class="col-md-6 col-lg-3 text-center my-4">
+   <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 204.8 105.765"><path d="M0 96.334h6.747V69.7l10.445 23.227c1.232 2.8 2.92 3.806 6.228 3.806s4.93-.995 6.164-3.806L40.03 69.7v26.644h6.748v-26.6c0-2.595-1.04-3.85-3.18-4.498-5.125-1.6-8.564-.216-10.12 3.244l-10.25 22.923L13.3 68.48c-1.492-3.46-4.995-4.844-10.12-3.244C1.038 65.885 0 67.14 0 69.734v26.6zm52.386-21.686h6.745v14.68c-.063.798.256 2.67 3.952 2.727 1.886.03 14.554 0 14.672 0v-17.48h6.76c.03 0-.007 23.834-.006 23.936.037 5.878-7.294 7.155-10.672 7.254H52.533v-4.54l21.342-.001c4.342-.46 3.83-2.617 3.83-3.344v-1.77h-14.34c-6.672-.06-10.92-2.973-10.973-6.323-.005-.3.144-14.995-.004-15.14z" fill="#00618a"/><path d="M89.716 96.334h19.398c2.27 0 4.477-.475 6.23-1.298 2.92-1.34 4.347-3.157 4.347-5.536v-4.93c0-1.947-1.622-3.763-4.8-4.974-1.687-.65-3.763-.995-5.774-.995h-8.175c-2.724 0-4.022-.822-4.346-2.638-.065-.216-.065-.4-.065-.606v-3.07c0-.173 0-.347.065-.563.324-1.384 1.038-1.774 3.438-2 .195 0 .454-.044.65-.044h19.268v-4.497h-18.944c-2.725 0-4.152.173-5.45.562C91.532 67 89.78 69 89.78 72.46v3.936c0 3.028 3.44 5.623 9.212 6.228.65.043 1.298.086 1.946.086h7.007c.26 0 .52 0 .714.044 2.14.173 3.05.562 3.698 1.34.4.4.52.78.52 1.2v3.936c0 .476-.324 1.082-.973 1.6-.584.52-1.557.865-2.855.952-.26 0-.454.043-.713.043h-18.62v4.498zm72.064-7.828c0 4.628 3.438 7.223 10.38 7.742a29.45 29.45 0 0 0 1.946.086h17.582v-4.498h-17.712c-3.957 0-5.45-.995-5.45-3.374v-23.27h-6.747v23.312zm-37.785.234V72.705c0-4.074 2.86-6.545 8.516-7.325a12.94 12.94 0 0 1 1.821-.13h12.807a13.87 13.87 0 0 1 1.886.13c5.656.78 8.516 3.25 8.516 7.325V88.74c0 3.305-1.215 5.074-4.015 6.227l6.646 6h-7.834l-5.377-4.854-5.413.343h-7.216c-1.235 0-2.535-.174-3.966-.564-4.3-1.17-6.37-3.424-6.37-7.152zm7.283-.4c0 .217.065.433.13.694.4 1.864 2.145 2.904 4.8 2.904h6.13l-5.63-5.083h7.834l4.9 4.433c.905-.482 1.5-1.22 1.7-2.167.065-.216.065-.433.065-.65V73.096c0-.173 0-.4-.065-.607-.4-1.733-2.146-2.73-4.746-2.73H136.22c-3 0-4.94 1.3-4.94 3.337v15.256z" fill="#e48e00"/><g fill="#b30000"><path d="M197.624 57.73c-4.147-.112-7.316.273-10.024 1.415-.77.325-1.997.333-2.123 1.298.423.443.49 1.105.825 1.65.647 1.047 1.74 2.45 2.713 3.184 1.064.803 2.16 1.663 3.303 2.36 2.03 1.238 4.296 1.945 6.25 3.184 1.152.73 2.296 1.65 3.42 2.476.555.408.93 1.042 1.65 1.297v-.118c-.38-.483-.477-1.147-.825-1.65l-1.533-1.533c-1.5-2-3.402-3.737-5.425-5.19-1.613-1.158-5.224-2.722-5.897-4.6l-.118-.118c1.144-.13 2.483-.543 3.54-.825 1.773-.475 3.358-.353 5.19-.825l2.477-.708v-.472c-.926-.95-1.586-2.207-2.595-3.066-2.64-2.25-5.523-4.495-8.49-6.37-1.646-1.04-3.68-1.714-5.425-2.595-.587-.296-1.618-.45-2.005-.944-.916-1.168-1.415-2.65-2.122-4-1.48-2.85-2.934-5.964-4.246-8.963-.895-2.045-1.48-4.062-2.594-5.897-5.355-8.804-11.12-14.118-20.048-19.34-1.9-1.11-4.187-1.55-6.605-2.123l-3.892-.236c-.792-.33-1.616-1.3-2.36-1.77-2.958-1.87-10.545-5.933-12.736-.6-1.383 3.373 2.067 6.664 3.302 8.374.866 1.2 1.976 2.543 2.594 3.892.407.886.478 1.775.826 2.713.857 2.3 1.603 4.823 2.712 6.958.56 1.08 1.178 2.218 1.887 3.184.435.593 1.18.854 1.297 1.77-.728 1.02-.77 2.6-1.18 3.892-1.843 5.812-1.148 13.035 1.533 17.337.823 1.32 2.76 4.152 5.425 3.066 2.33-.95 1.8-3.89 2.477-6.486.15-.59.058-1.02.354-1.415v.118l2.123 4.245c1.57 2.53 4.36 5.175 6.722 6.96 1.225.925 2.2 2.525 3.774 3.066v-.118h-.118c-.307-.48-.787-.677-1.18-1.06-.923-.905-1.95-2.03-2.713-3.066-2.15-2.918-4.048-6.11-5.778-9.435-.826-1.587-1.545-3.338-2.24-4.953-.268-.623-.265-1.564-.825-1.887-.763 1.184-1.887 2.14-2.477 3.538-.944 2.234-1.066 4.958-1.415 7.784-.207.074-.115.023-.236.118-1.642-.396-2.22-2.087-2.83-3.538-1.544-3.67-1.83-9.576-.472-13.798.35-1.092 1.94-4.534 1.297-5.543-.307-1.007-1.32-1.6-1.887-2.36-.7-.95-1.402-2.204-1.887-3.302-1.264-2.86-1.854-6.07-3.184-8.963-.636-1.382-1.71-2.78-2.594-4-.978-1.36-2.073-2.364-2.83-4-.27-.585-.636-1.52-.236-2.123a.93.93 0 0 1 .708-.708c.684-.527 2.59.175 3.302.472 1.89.786 3.47 1.534 5.072 2.595.77.5 1.547 1.496 2.476 1.77h1.06c1.66.382 3.52.12 5.07.59 2.742.833 5.198 2.13 7.43 3.538 6.798 4.292 12.355 10.402 16.157 17.7.612 1.173.876 2.294 1.415 3.538 1.087 2.5 2.456 5.093 3.538 7.547 1.08 2.45 2.13 4.92 3.656 6.958.802 1.07 3.9 1.646 5.307 2.24.987.417 2.603.852 3.538 1.415 1.785 1.077 3.515 2.36 5.19 3.54.837.59 3.41 1.883 3.538 2.948z"/><path d="M144.91 12.798c-.865-.016-1.476.094-2.123.236v.118h.118c.412.848 1.14 1.393 1.65 2.123l1.18 2.476.118-.118c.73-.515 1.065-1.338 1.06-2.595-.293-.308-.336-.694-.59-1.062-.337-.49-1-.768-1.415-1.18z" fill-rule="evenodd"/></g><path d="M194.855 91.708c0 2.97 2.347 4.972 4.972 4.972s4.972-2.002 4.972-4.972-2.347-4.972-4.972-4.972-4.972 2.002-4.972 4.972zm8.83 0c0 2.254-1.723 3.938-3.86 3.938-2.16 0-3.86-1.684-3.86-3.938s1.698-3.938 3.86-3.938c2.135 0 3.86 1.684 3.86 3.938zm-2.52 2.838h1.113l-1.63-2.492c.875-.093 1.537-.518 1.537-1.552 0-1.154-.73-1.63-2.134-1.63h-2.215v5.675h.955v-2.453h.888l1.485 2.453zm-2.374-3.25v-1.63h1.1c.57 0 1.26.106 1.26.77 0 .795-.623.862-1.34.862h-1.02z" fill="#b30000" fill-rule="evenodd"/></svg>
+    <h3 class="text-uppercase my-3">MYSQL DATABASE</h3>
+
+      </div>
+    <!--end of single column-->
+      <!--single column-->
+  <div class="col-md-6 col-lg-3 text-center my-4">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 128 128" id="jquery"><path fill="#b30000" d="M27.758 20.421c-7.352 10.565-6.437 24.312-.82 35.54l.411.798.263.506.164.291.293.524c.174.307.353.612.536.919l.306.504c.203.326.41.65.622.973l.265.409c.293.437.592.872.901 1.301l.026.033.152.205c.267.368.542.732.821 1.093l.309.393c.249.313.502.623.759.934l.29.346c.345.406.698.812 1.057 1.208l.021.022.041.045c.351.383.71.758 1.075 1.133l.344.347c.282.284.569.563.858.841l.351.334c.387.364.777.722 1.176 1.07l.018.016.205.174c.351.305.708.605 1.068.902l.442.353c.294.235.591.468.89.696l.477.361c.33.243.663.482.999.717l.363.258.101.072c.318.22.645.431.97.642l.42.28c.5.315 1.007.628 1.519.93l.42.237c.377.217.756.431 1.14.639l.631.326.816.424.188.091.334.161c.427.204.858.405 1.293.599l.273.122c.498.218 1.001.427 1.508.628l.368.144c.469.182.945.359 1.423.527l.179.062c.524.184 1.054.353 1.587.52l.383.114c.542.164 1.079.358 1.638.462 35.553 6.483 45.88-21.364 45.88-21.364-8.674 11.3-24.069 14.28-38.656 10.962-.553-.125-1.089-.298-1.628-.456l-.406-.124c-.526-.161-1.049-.33-1.568-.51l-.215-.077c-.465-.164-.924-.336-1.382-.513l-.388-.152c-.501-.198-1-.405-1.492-.62l-.298-.133c-.423-.191-.842-.384-1.259-.585l-.364-.175c-.327-.159-.65-.328-.974-.495l-.649-.341c-.395-.21-.782-.43-1.167-.654l-.394-.219c-.513-.303-1.019-.615-1.52-.932l-.41-.273c-.363-.234-.725-.473-1.081-.719l-.349-.245c-.344-.242-.685-.489-1.022-.738l-.453-.343c-.31-.237-.618-.476-.922-.721l-.411-.33c-.388-.318-.771-.64-1.149-.969l-.126-.105c-.409-.359-.811-.728-1.208-1.098l-.34-.328c-.294-.279-.584-.561-.868-.851l-.34-.34c-.362-.37-.717-.745-1.065-1.126l-.053-.057c-.368-.402-.728-.813-1.08-1.229l-.283-.336c-.263-.316-.523-.638-.777-.961l-.285-.355c-.307-.397-.605-.793-.898-1.195-8.098-11.047-11.008-26.283-4.535-38.795M50.578 11.519c-5.316 7.65-5.028 17.893-.88 25.983.695 1.356 1.477 2.673 2.351 3.925.796 1.143 1.68 2.501 2.737 3.418.383.422.784.834 1.193 1.238l.314.311c.397.385.801.764 1.218 1.132l.05.043.012.012c.462.405.939.794 1.423 1.178l.323.252c.486.372.981.738 1.489 1.087l.043.033.68.447.322.213c.363.233.73.459 1.104.676l.156.092c.322.185.648.367.975.545l.347.18.682.354.103.047c.469.23.941.453 1.424.663l.314.13c.386.163.775.323 1.167.473l.5.184c.356.132.712.253 1.072.373l.484.155c.511.158 1.017.359 1.549.448 27.45 4.547 33.787-16.588 33.787-16.588-5.712 8.228-16.775 12.153-28.58 9.089-.524-.138-1.042-.288-1.555-.449l-.467-.151c-.365-.117-.728-.243-1.087-.374l-.491-.183c-.394-.152-.784-.309-1.171-.473l-.315-.133c-.485-.211-.962-.434-1.432-.666l-.718-.365-.414-.213c-.306-.166-.61-.338-.909-.514l-.217-.123c-.372-.217-.738-.44-1.1-.672l-.332-.221-.712-.472c-.506-.349-.999-.714-1.484-1.085l-.334-.264c-5.167-4.079-9.263-9.655-11.21-15.977-2.041-6.557-1.601-13.917 1.935-19.891M69.771 4.868c-3.134 4.612-3.442 10.341-1.267 15.435 2.293 5.407 6.992 9.648 12.477 11.66l.682.235.3.096c.323.102.644.22.978.282 15.157 2.929 19.268-7.777 20.362-9.354-3.601 5.185-9.653 6.43-17.079 4.627-.586-.142-1.231-.354-1.796-.555-.725-.259-1.439-.553-2.134-.886-1.318-.634-2.575-1.402-3.741-2.282-6.645-5.042-10.772-14.659-6.436-22.492"></path><path fill="#b30000" d="M66.359 96.295h-4.226c-.234 0-.467.188-.517.417l-1.5 6.94-1.5 6.94c-.049.229-.282.417-.516.417h-2.991c-2.959 0-2.617-2.047-2.011-4.851l.018-.085.066-.354.012-.066.135-.72.145-.771.154-.785.682-3.332.683-3.332c.047-.23-.107-.419-.341-.419h-4.337c-.234 0-.466.188-.514.418l-.933 4.424-.932 4.425-.002.006-.086.412c-1.074 4.903-.79 9.58 5.048 9.727l.17.003h9.163c.234 0 .467-.188.516-.417l1.976-9.289 1.976-9.29c.049-.23-.103-.417-.338-.418zM21.103 96.246h-4.64c-.235 0-.469.188-.521.416l-.44 1.942-.44 1.942c-.051.229.098.416.333.416h4.676c.235 0 .468-.188.518-.417l.425-1.941.425-1.941c.049-.229-.101-.417-.336-.417zM19.757 102.29h-4.677c-.234 0-.469.188-.521.416l-.657 2.91-.656 2.909-.183.834-.631 2.97-.63 2.971c-.049.229-.15.599-.225.821 0 0-.874 2.6-2.343 2.57l-.184-.004-1.271-.023h-.001c-.234-.003-.469.18-.524.407l-.485 2.039-.484 2.038c-.055.228.093.416.326.42.833.01 2.699.031 3.828.031 3.669 0 5.604-2.033 6.843-7.883l1.451-6.714 1.361-6.297c.049-.227-.103-.415-.337-.415zM105.874 100.716l-.194-.801-.191-.82-.097-.414c-.38-1.477-1.495-2.328-3.917-2.328l-3.77-.004-3.472-.005h-3.907c-.234 0-.466.188-.515.417l-.173.816-.204.964-.057.271-1.759 8.24-1.67 7.822c-.05.23-.066.512-.038.626.028.115.479.209.713.209h3.524c.235 0 .532-.042.66-.094s.317-.513.364-.742l.626-3.099.627-3.1.001-.005.084-.413.76-3.56.671-3.144c.05-.229.281-.416.515-.417l11.089-.005c.235.002.383-.185.33-.414zM120.149 93.476l-.854.003h-3.549c-.235 0-.536.159-.667.353l-7.849 11.498c-.132.194-.283.166-.335-.062l-.578-2.533c-.052-.229-.287-.416-.522-.416h-5.045c-.235 0-.374.184-.31.409l2.261 7.921c.064.226.069.596.011.824l-.985 3.833c-.059.228.085.413.32.413h4.987c.234 0 .474-.186.532-.413l.986-3.833c.058-.229.221-.567.363-.755l12.742-16.911c.142-.188.065-.341-.169-.339l-1.339.008zM80.063 103.395v-.004c-.029.254-.264.441-.499.441h-6.397c-.222 0-.334-.15-.301-.336l.006-.015-.004.002.003-.021.029-.109c.611-1.624 1.855-2.69 4.194-2.69 2.634-.001 3.148 1.285 2.969 2.732zm-1.877-7.384c-8.211 0-10.157 4.984-11.249 10.015-1.091 5.128-.998 9.921 7.5 9.921h1.03l.256-.001h.06l1.02-.003h.018c2.244-.009 4.495-.026 5.406-.033.233-.004.461-.191.509-.42l.344-1.681.067-.327.41-2.006c.047-.229-.106-.418-.341-.418h-7.639c-3.039 0-3.941-.807-3.608-3.181h12.211l-.001.001.008-.001c.194-.003.374-.137.445-.315l.029-.106-.001.001c1.813-6.839 1.293-11.445-6.474-11.446zM39.376 103.369l-.116.409v.001l-.922 3.268-.922 3.267c-.063.227-.308.411-.543.411h-4.88c-3.702 0-4.604-2.896-3.702-7.166.901-4.368 2.668-7.083 6.312-7.358 4.98-.376 5.976 3.126 4.773 7.168zm3.348 7.105s2.301-5.588 2.823-8.814c.713-4.319-1.45-10.585-9.804-10.585-8.306 0-11.914 5.981-13.29 12.484-1.376 6.55.427 12.293 8.686 12.246l6.516-.024 6.089-.022c.234-.002.474-.188.534-.414l1.061-4.046c.059-.228-.084-.414-.319-.416l-1.017-.006-1.017-.006c-.199-.001-.313-.131-.289-.302l.027-.095zM83.844 106.733c0 .155-.125.281-.28.281-.154 0-.28-.126-.28-.281 0-.154.125-.279.28-.279.155 0 .28.125.28.279z"></path></svg>
+
+    <h3 class="text-uppercase my-3">JQUERY</h3>
+
+      </div>
+    <!--end of single column-->
+</div>
+  </div>
+</section>
+
+<!--about section-->
+<section id="about" class="bg-info">
+  <div class="container-fluid">
+    <div class="row">
+      <!--about image column-->
+      <div class="col-md-6 about-picture height-80">
+        <!--end of about image column-->
+      </div>
+      <!--About text column-->
+      <div class="col-md-6 about-text height-80 px-5 d-flex align-items-center justify-content-center">
+        <!--this is for centering-->
+        <div class="about-text-center">
+          <!-- begin of title-->
+          <div class="row">
+            <div class="col text-center">
+              <h1 class="display-4 mb-0 text-uppercase text-dark"><strong>ABOUT</strong></h1>
+              <div class="title-underline bg-warning bg-blue"></div>
+              <p class="mt-2 text-capitalize text-dark">The world is a small place. Humanity comes before religion. help people to grow and leave an  great impact on mother earth.</p>
+            </div>
+          </div>
+          <!--end of title-->
+          <!--begin single item-->
+          <div class="checkbox-item d-flex">
+            <i class="fas fa-check fa-1x bg-warning p-2 ml-3 align-self-start"></i>
+            <p class="lead text-light">A multi-faceted individual on a journey of self-discovery through the realms of web development, mathematics, data science, and a profound appreciation for the beauty of nature. Welcome to my digital sanctuary, where lines of code and mathematical equations intertwine with the serenity of the natural world</p>
+          </div>
+          <!--end of single item-->
+
+           <!--begin single item-->
+           <div class="checkbox-item d-flex">
+            <i class="fas fa-check fa-1x bg-warning p-2 ml-3 align-self-start"></i>
+            <p class="lead text-light">In a world that often celebrates extroversion, I find solace in the quiet corners of my mind. As an introvert, I thrive in introspection, allowing me to delve deep into the intricate patterns of both code and the natural world. Silence is my muse, and solitude fuels my creativity.</p>
+          </div>
+          <!--end of single item-->
+           <!--begin single item-->
+           <div class="checkbox-item d-flex">
+            <i class="fas fa-check fa-1x bg-warning p-2 ml-3 align-self-start"></i>
+            <p class="lead text-light">To me, mathematics is not just a subject; it's a language that unveils the secrets of the universe. Whether unraveling complex algorithms or solving real-world problems with statistical models, I revel in the beauty of numbers and the precision they bring to the chaos of data.</p>
+          </div>
+          <!--end of single item-->
+          <!--begin single item-->
+          <div class="checkbox-item d-flex">
+            <i class="fas fa-check fa-1x bg-warning p-2 ml-3 align-self-start"></i>
+            <p class="lead text-light">In a world where knowledge is ever-evolving, I am a perpetual student. From the ancient wisdom of mathematical theorems to the cutting-edge innovations in web development and data science, I am driven by an insatiable curiosity to learn, adapt, and grow.</p>
+          </div>
+          <!--end of single item-->
+
+           <!--begin single item-->
+           <div class="checkbox-item d-flex">
+            <i class="fas fa-check fa-1x bg-warning p-2 ml-3 align-self-start"></i>
+            <p class="lead text-light">Beyond the confines of screens and algorithms, I am a nature enthusiast. The rustle of leaves, the dance of sunlight through branches, and the tranquility of open spaces are my sources of inspiration. Nature is not just a place I visit; it's a canvas that shapes my perspective and fuels my creativity</p>
+          </div>
+          <!--end of single item-->
+        </div>
+      </div>
+      <!--end of about text column-->
+    </div>
+  </div>
+</section>
+<!--end of about section-->
+
+<section id="projects" class="bg-white py-5">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="lead display-4 mb-0 text-uppercase text-dark"><strong>Projects</strong></h1>
+        <div class="title-underline bg-warning bg-blue"></div>
+      </div>
+    </div>
+    <!--team member-->
+    <div class="row">
+      <!--team 1-->
+        {% for project in projects %}
+      <div class="col-md-6 col-lg-4 my-3">
+<div class="card">
+<img src="{{project.image.url}}" class="card-img-top"/>
+<div class="card-body">
+  <h5 class="card-title text-capitalize">{{project.title}}</h5>
+  <p class="card-text">{{project.description}}</p>
+  <a href="{{project.link}}" class="btn btn-outline-warning text-uppercase m-2" target="_blank">Live Preview</a>
+  <a href="{{project.github}}" target="_blank" class="btn btn-outline-warning text-uppercase m-2" target="_blank">Github Repo</a>
+</div>
+</div>
+      </div>
+      <!--end of team1-->
+{% endfor %}
+        </div>
+    <!--end of team member-->
+  </div>
+</section>
+<!--end of team section-->
+
+<section id="videos" class="bg-success p-2">
+  <div class="container-fluid">
+    <div class="row">
+      <!--title begin-->
+      <div class="col text-center">
+        <h1 class="lead display-4 mb-0 text-uppercase text-dark"><strong>Video Tutorial section</strong></h1>
+        <div class="title-underline bg-danger bg-blue"></div>
+        <p class="mt-2 text-capitalize text-white">Welcome to my interactive video section for python, mathematics, chemistry, BASIC programming and basics of computer</p>
+      </div>
+      <!--title end-->
+    </div>
+    <div class="row">
+        {% for video in page_obj %}
+      <div class="col-md-4 ml-2 mr-2">
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe width="380" height="200" src="{{video.youtube_link}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>></iframe>
+        </div>
+        <h2 class="text-warning ">{{video.title}}</h2>
+        <p class="text-white">{{video.description}}</p>
+      </div>
+
+        {% endfor %}
+    </div>
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    {% if page_obj.has_previous %}
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+      </li>
+    {% endif %}
+
+    {% for page_number in page_obj.paginator.page_range %}
+      {% if page_number == page_obj.number %}
+        <li class="page-item active">
+          <span class="page-link">
+            {{ page_number }}
+            <span class="sr-only">(current)</span>
+          </span>
+        </li>
+      {% else %}
+        <li class="page-item">
+          <a class="page-link" href="?page={{ page_number }}">{{ page_number }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page_obj.next_page_number }}">Next</a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
+  </div>
+      </section>
+      <!--
+<nav aria-label="Page navigation example">
+        <div class="pagination">
+    <span class="step-links">
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; first</a>
+            <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+
+        {% if page_obj.has_next %}
+            <a href="?page={{page_obj.next_page_number}}">next</a>
+            <a href="?page={{page_obj.paginator.num_pages}}">last &raquo;</a>
+        {% endif %}
+    </span>
+</div>
+-->
+
+
+
+<!--contact section-->
+<section id="contact" class="bg-warning py-5">
+  <div class="container-fluid">
+    <div class="row">
+      <!--title begins-->
+      <div class="col text-center">
+        <h1 class="lead display-4 mb-0 text-uppercase text-dark"><strong>contact</strong></h1>
+        <div class="title-underline bg-info"></div>
+
+      </div>
+      <!--end of title-->
+    </div>
+    <div class="row">
+      <div class="col-md-6 my-3">
+        <div class="card card-body bg-secondary">
+          <div class="card-title text-center text-white">
+            <img src="{% static 'images/sar1.jpg'%}" class="logo img-fluid rounded-circle img-center"/>
+          </div>
+        <div class="card-text text-center text-white">
+          <p>I am available on:</p></div>
+          <!--form begins-->
+          <form class="text-center">
+            <!--simple form-->
+          <div class="form-group mt-3">
+            <i class="fa-solid fa-envelope fa-5x"></i>
+<p class="text-white middle">salaudeenridwan86@gmail.com</p>
+          </div>
+          <!--end of simple form-->
+
+          <!--email-->
+          <div class="form-group mt-3">
+            <i class="fa-solid fa-mobile fa-5x"></i>
+<p class="text-white middle">07089699978</p>
+          </div>
+          <!--phone-->
+          <div class="form-group mt-3">
+            <i class="fas fa-address-card fa-5x"></i>
+            <p class="text-white middle">Santa Maria street Egan-Igando lagos state</p>
+          </div>
+          <!--end of phone-->
+
+          <!--input group-->
+               </form>
+          <!--end of form-->
+        </div>
+
+      </div>
+      <!--google map column-->
+      <div class="col-md-6 text-center my-3">
+        <div class="embed-responsive embed-responsive-4by3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63422.41731039197!2d3.154165664007213!3d6.534175655272488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8505633db645%3A0xedea29a14b15fe43!2sIgando%2FEgan%2C%20Lagos!5e0!3m2!1sen!2sng!4v1701272822185!5m2!1sen!2sng" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="certificates" class="bg-info p-5">
+  <div class="container">
+    <div class="row">
+      <!--title begin-->
+      <div class="col text-center">
+        <h1 class="lead display-4 mb-0 text-uppercase text-dark"><strong>Certificates Obtained</strong></h1>
+        <div class="title-underline bg-danger"></div>
+      </div>
+      <!--title end-->
+    </div>
+        <div class="row">
+            {% for cert in page_object %}
+      <!--team 1-->
+      <div class="col-md-6 col-lg-4 my-3">
+<div class="card">
+<img src="{{cert.image.url}}" class="card-img-top img-fluid img-thumbnail"/>
+<div class="card-body">
+  <h5 class="card-title text-capitalize">{{cert.title}}</h5>
+  <p class="card-text">{{cert.description}}</p>
+</div>
+</div>
+      </div>
+            {% endfor %}
+  </div>
+  </div>
+        <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    {% if page_object.has_previous %}
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page_object.previous_page_number }}">Previous</a>
+      </li>
+    {% endif %}
+
+    {% for page_number in page_object.paginator.page_range %}
+      {% if page_number == page_object.number %}
+        <li class="page-item active">
+          <span class="page-link">
+            {{ page_number }}
+            <span class="sr-only">(current)</span>
+          </span>
+        </li>
+      {% else %}
+        <li class="page-item">
+          <a class="page-link" href="?page={{ page_number }}">{{ page_number }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+      <li class="page-item">
+        <a class="page-link" href="?page={{ page_object.next_page_number }}">Next</a>
+      </li>
+    {% endif %}
+  </ul>
+</nav>
+</section>
+
+<!--end of contact section-->
+
+<section id="progress" class="p-5">
+  <div class="container-fluid">
+    <div class="row">
+        <!--title begins-->
+      <div class="col text-center">
+        <h1 class="lead display-4 mb-0 text-uppercase text-white"><strong>Progress</strong></h1>
+        <div class="title-underline bg-info"></div>
+        <p class="mt-2 text-capitalize text-dark display-6">My Learning so far</p>
+      </div>
+      </div>
+      <!--end of title-->
+
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <!--progress bar single-->
+ <!--progress bar single-->
+ <div class="prog my-2 text-white d-flex justify-content-between">
+    <h3>Bootsrap</h3>
+    <h3>80%</h3>
+  </div>
+  <div class="progress bg-secondary">
+    <div class="progress-bar bg-info" style="width: 80%;"></div>
+    </div>
+   <!--end of progress bar single-->
+  <!--progress bar single-->
+<div class="prog my-2 text-white d-flex justify-content-between">
+    <h3>JAVASCRIPT</h3>
+    <h3>60%</h3>
+  </div>
+  <div class="progress bg-secondary">
+    <div class="progress-bar bg-success" style="width: 60%;"></div>
+    </div>
+   <!--end of progress bar single-->
+  <!--progress bar single-->
+<div class="prog my-2 text-white d-flex justify-content-between">
+    <h3>PYTHON</h3>
+    <h3>85%</h3>
+  </div>
+  <div class="progress bg-secondary">
+    <div class="progress-bar bg-info" style="width: 85%;"></div>
+    </div>
+   <!--end of progress bar single-->
+ <!--progress bar single-->
+<div class="prog my-2 text-white d-flex justify-content-between">
+  <h3>HTML</h3>
+  <h3>100%</h3>
+</div>
+<div class="progress bg-secondary">
+  <div class="progress-bar bg-warning" style="width: 100%;"></div>
+  </div>
+ <!--end of progress bar single-->
+ <div class="prog my-2 text-white d-flex justify-content-between">
+    <h3>DJANGO</h3>
+    <h3>50%</h3>
+  </div>
+  <div class="progress bg-secondary">
+    <div class="progress-bar bg-success" style="width: 50%;"></div>
+    </div>
+   <!--end of progress bar single-->
+   <div class="prog my-2 text-white d-flex justify-content-between">
+    <h3>CSS</h3>
+    <h3>45%</h3>
+  </div>
+  <div class="progress bg-secondary">
+    <div class="progress-bar bg-danger" style="width: 45%;"></div>
+    </div>
+   <!--end of progress bar single-->
+
+   <div class="prog my-2 text-white d-flex justify-content-between">
+    <h3>Pandas</h3>
+    <h3>60%</h3>
+  </div>
+  <div class="progress bg-secondary">
+    <div class="progress-bar bg-warning" style="width: 60%;"></div>
+    </div>
+   <!--end of progress bar single-->
+   <div class="prog my-2 text-white d-flex justify-content-between">
+    <h3>Numpy</h3>
+    <h3>95%</h3>
+  </div>
+  <div class="progress bg-secondary">
+    <div class="progress-bar bg-light" style="width: 95%;"></div>
+    </div>
+   <!--end of progress bar single-->
+   <div class="prog my-2 text-white d-flex justify-content-between">
+    <h3>Matplotlib</h3>
+    <h3>45%</h3>
+  </div>
+  <div class="progress bg-secondary">
+    <div class="progress-bar bg-dark" style="width: 45%;"></div>
+    </div>
+   <!--end of progress bar single-->
+
+
+      </div>
+      </div>
+    </div>
+</section>
+
+<footer id="social-link" class="bg-dark py-3">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col text-center">
+      <h1 class="lead display-4 mb-0 text-uppercase text-white"><strong>Social link</strong></h1>
+      <div class="title-underline bg-primary"></div>
+    </div>
+  </div>
+<div class="row">
+  <div class="col text-center my-3">
+<a href="https://web.facebook.com/ridwan.adeniyi.9/" target="_blank" class="btn"><i class="fab fa-facebook fa-3x text-primary m-2"></i></a>
+<a href="https://twitter.com/Sarbeeton1" target="_blank" class="btn"><i class="fab fa-twitter fa-3x text-primary m-2"></i></a>
+<a href="https://www.youtube.com/channel/UCK9Seb_RSnNWqIiCPm7g_1w" target="_blank" class="btn"><i class="fab fa-youtube fa-3x text-primary m-2"></i></a>
+<a href="https://www.linkedin.com/in/salaudeen-ridwan-576119124/" target="_blank" class="btn"><i class="fa fa-linkedin fa-3x text-primary m-2" aria-hidden="true"></i></a>
+  </div>
+</div>
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
